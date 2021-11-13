@@ -3,3 +3,23 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+.nav-menu-box{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 992px) {
+  .logo-img{
+    text-align: center;
+  }
+  .nav-menu-box{
+    justify-content: center !important;
+  }
+  .nav-menu{
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+}
