@@ -9,6 +9,16 @@ body{
   align-items: end;
   text-transform: uppercase;
 }
+.row{
+	margin: 20px auto;
+}
+.page-heading{
+	text-align: center;
+}
+.address{
+	padding-top: 5%;
+	text-align: center;
+}
 
 @media all and (max-width: 992px) {
   .logo-img{
