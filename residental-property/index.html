@@ -74,23 +74,23 @@
 			</div>
 			<div class="col-lg-12">
 				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-				  <label class="form-check-label" for="inlineRadio1">For Sale</label>
+				  <input class="form-check-input" type="radio" name="radio" id="forSale" value="forSale" onchange="searchForSale()">
+				  <label class="form-check-label" for="forSale">For Sale</label>
 				</div>
 				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-				  <label class="form-check-label" for="inlineRadio2">To let</label>
+				  <input class="form-check-input" type="radio" name="radio" id="toLet" value="toLet" onchange="searchToLet()">
+				  <label class="form-check-label" for="toLet">To let</label>
 				</div>
 			</div>
 				<div class="col-lg-5">	
-					<select class="form-select" aria-label="Property type">
+					<select id="propertyType" class="form-select" aria-label="Property type">
 					  <option selected>Property Type</option>
-					  <option value="1">House</option>
-					  <option value="2">Apartament</option>
-					  <option value="3">Bangalow</option>
-					  <option value="4">All</option>
+					  <option value="House">House</option>
+					  <option value="Apartament">Apartament</option>
+					  <option value="Bungalow">Bungalow</option>
+					  <option value="All">All</option>
 					</select>
-					<select class="form-select" aria-label="Min bedrooms">
+					<select id="minBeds" class="form-select" aria-label="Min bedrooms">
 					  <option selected>Min bedrooms</option>
 					  <option value="1">1 bed</option>
 					  <option value="2">2 beds</option>
@@ -100,27 +100,32 @@
 					</select>
 				</div>
 				<div class="col-lg-5">
-					<select class="form-select" aria-label="Max price buy">
+					<select id="maxPriceSearch" class="form-select" aria-label="Max price buy">
 					  <option selected>Max price</option>
-					  <option value="1">€100k</option>
-					  <option value="2">€200k</option>
-					  <option value="3">€300k</option>
-					  <option value="4">All</option>
+					  <option value="100k">€100k</option>
+					  <option value="200k">€200k</option>
+					  <option value="300k">€300k</option>
+					  <option value="All">All</option>
 					</select>
-					<select class="form-select" aria-label="Max rent">
+					<select id="maxRentSearch" class="form-select" aria-label="Max rent">
 					  <option selected>Max rent</option>
-					  <option value="1">€500</option>
-					  <option value="2">€1000</option>
-					  <option value="3">€1500</option>
-					  <option value="4">All</option>
+					  <option value="500">€500</option>
+					  <option value="1000">€1000</option>
+					  <option value="1500">€1500</option>
+					  <option value="All">All</option>
 					</select>
+				</div>
+				<div class="col-lg-2">
+					<button type="submit" class="btn btn-primary" onclick="searchSelected()">Search</button>
 				</div>
 			</div>
 		
 			<!--Property cards-->
 			<div class="row">
 				<h3>Available properties</h3>
-				<div class="col-md-3 team-pic">
+			</div>
+			<div class="row">
+				<div class="col-md-3 property-pic price-200 3-beds house">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -130,15 +135,15 @@
 							For Sale
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
+							<li class="list-group-item">€190 000</li>
 							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">House</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 			
-				<div class="col-lg-3 team-pic">
+				<div class="col-lg-3 property-pic price-300 4-beds house">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -148,15 +153,33 @@
 							For Sale
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">€280 000</li>
+							<li class="list-group-item">4 bedrooms</li>
+							<li class="list-group-item">House</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 				
-				<div class="col-md-3 team-pic">
+				<div class="col-md-3 property-pic rent-1000 3-beds bungalow">
+					<div class="card" style="width: 18rem;">
+					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+					  <div class="card-body">
+						<h5 class="card-title">Title</h5>
+						<p class="card-text">Title</p>
+						  <div class="card-header">
+							To Let
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">€900</li>
+							<li class="list-group-item">3 bedrooms</li>
+							<li class="list-group-item">Bungalow</li>
+						  </ul>
+					  </div>
+					</div>
+				</div>
+			
+				<div class="col-lg-3 property-pic price-200 3-beds apartament">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -166,15 +189,34 @@
 							For Sale
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
+							<li class="list-group-item">€140 000</li>
 							<li class="list-group-item">3 bedrooms</li>
+							<li class="list-group-item">Apartament</li>
+						  </ul>
+					  </div>
+					</div>
+				</div>
+			<!--</div>
+			<div class="row">-->
+				<div class="col-md-3 property-pic rent-1000 2-beds house">
+					<div class="card" style="width: 18rem;">
+					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+					  <div class="card-body">
+						<h5 class="card-title">Title</h5>
+						<p class="card-text">Title</p>
+						  <div class="card-header">
+							To Let
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">€800</li>
+							<li class="list-group-item">2 bedrooms</li>
 							<li class="list-group-item">Semi-detached House</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 			
-				<div class="col-lg-3 team-pic">
+				<div class="col-lg-3 property-pic price-100 1-bed apartament">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -185,88 +227,51 @@
 						  </div>
 						  <ul class="list-group list-group-flush">
 							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
-						  </ul>
-					  </div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 team-pic">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
-					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
-						  <div class="card-header">
-							For Sale
-						  </div>
-						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
-						  </ul>
-					  </div>
-					</div>
-				</div>
-			
-				<div class="col-lg-3 team-pic">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
-					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
-						  <div class="card-header">
-							For Sale
-						  </div>
-						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">1 bedroom</li>
+							<li class="list-group-item">Apartament</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 				
-				<div class="col-md-3 team-pic">
+				<div class="col-md-3 property-pic rent-1500 4-beds house">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
 						<h5 class="card-title">Title</h5>
 						<p class="card-text">Title</p>
 						  <div class="card-header">
-							For Sale
+							To Let
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">€1500</li>
+							<li class="list-group-item">4 bedrooms</li>
+							<li class="list-group-item">House</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 			
-				<div class="col-lg-3 team-pic">
+				<div class="col-lg-3 property-pic rent-500 2-beds bungalow">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
 						<h5 class="card-title">Title</h5>
 						<p class="card-text">Title</p>
 						  <div class="card-header">
-							For Sale
+							To Let
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">€500</li>
+							<li class="list-group-item">2 bedrooms</li>
+							<li class="list-group-item">Bungalow</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 team-pic">
+			<!--</div>
+			<div class="row">-->
+				<div class="col-md-3 property-pic price-200 2-beds bungalow">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -276,33 +281,33 @@
 							For Sale
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">€110 000</li>
+							<li class="list-group-item">2 bedrooms</li>
+							<li class="list-group-item">Bungalow</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 			
-				<div class="col-lg-3 team-pic">
+				<div class="col-lg-3 property-pic rent-1000 3-beds apartament">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
 						<h5 class="card-title">Title</h5>
 						<p class="card-text">Title</p>
 						  <div class="card-header">
-							For Sale
+							To Let
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
+							<li class="list-group-item">€900</li>
 							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">Apartament</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 				
-				<div class="col-md-3 team-pic">
+				<div class="col-md-3 property-pic price-200 3-beds bungalow">
 					<div class="card" style="width: 18rem;">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -312,68 +317,48 @@
 							For Sale
 						  </div>
 						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
+							<li class="list-group-item">€170 000</li>
 							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
-						  </ul>
-					  </div>
-					</div>
-				</div>
-			
-				<div class="col-lg-3 team-pic">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
-					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
-						  <div class="card-header">
-							For Sale
-						  </div>
-						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
+							<li class="list-group-item">Bungalow</li>
 						  </ul>
 					  </div>
 					</div>
 				</div>
 			</div>
-		
-			<div class="row">
-				<div class="col-md-3 team-pic">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
-					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
-						  <div class="card-header">
-							For Sale
-						  </div>
-						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
-						  </ul>
-					  </div>
-					</div>
+			<div class="row footer">
+				<div class="col-md-3">
+					<ul class="footer-logo">
+						<a href="../"><img src="../images/logo-small.png" width="150px" alt="page logo"></a>
+						<p>&copy Real Estate Agency 2021</p>
+					</ul>
 				</div>
-			
-				<div class="col-lg-3 team-pic">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
-					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
-						  <div class="card-header">
-							For Sale
-						  </div>
-						  <ul class="list-group list-group-flush">
-							<li class="list-group-item">€130 000</li>
-							<li class="list-group-item">3 bedrooms</li>
-							<li class="list-group-item">Semi-detached House</li>
-						  </ul>
-					  </div>
-					</div>
+				<div class="col-md-3">
+					<ul class="footer-links">
+						<li><a href="../">Home</a></li>
+						<li><a href="">Residental Property</a></li>
+						<li><a href="../contact/">Contact Us</a></li>
+						<li><a href="../about-us/">About Us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer-info">
+						<li><span>Real Estate Agency<span></li>
+						<li>10 Example Street</li>
+						<li>Blanchardstown</li>
+						<li>Dublin 15</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="footer-info">
+						<li><span>Email:</span></li>
+						<li>contact@realestate.ie</li>
+						<li><span>Tel:</span></li>
+						<li>01 987654321</li>
+					</ul>
+				</div>
+				<div class="footer-project">
+					<hr>
+					<p><a href="https://www.ncirl.ie/" target="_blank">NCI Project</a><p>
 				</div>
 			</div>
 	  </div>
@@ -381,5 +366,6 @@
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	  <!--Local JS script files-->
 	  <script src="../scripts/app.js"></script>
+	  <script src="../scripts/search-property.js"></script>
 	</body>
 </html>
