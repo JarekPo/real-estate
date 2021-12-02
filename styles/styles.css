@@ -19,9 +19,44 @@ body{
 .page-heading{
 	text-align: center;
 }
-.address{
-	padding-top: 5%;
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	color: white;
+	font-size: 80%;
+	background: #004463;
+	padding: 30px;
+	border-radius: 4px;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #2880B9;
+	text-decoration: underline;
+}
+.footer-links, .footer-info, .footer-logo{
+	width:90%;
+	margin: 10px auto;
+	list-style: none;
+}
+.footer-info span{
+	font-size:120%;
+	font-weight:bold;
+}
+.footer-project{
+	width:50%;
 	text-align: center;
+	margin: auto;
+}
+.address{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
 }
 
 @media all and (max-width: 992px) {
@@ -35,5 +70,7 @@ body{
     flex-wrap: nowrap;
     white-space: nowrap;
   }
-
+  .footer{
+	  flex-direction: column;
+  }
 }
