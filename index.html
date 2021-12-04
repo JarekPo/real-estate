@@ -66,58 +66,111 @@
       </div>
     </div>
     <!--Form-->
-    <form class="row g-3">
-      <div class="col-md-5">
-        <label for="Location" class="form-label">Location</label>
-        <input type="search" class="form-control" id="inputEmail4">
+    <div class="find-property-container">
+      <div class="row">
+        <div class="col-12 section-name">
+         <p>Find property</p> 
+        </div>
+        <form class="row g-3">
+          <div class="col-md-5">
+            <label for="Location" class="form-label">Location</label>
+            <input type="search" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Property type</label>
+            <select id="inputState" class="form-select">
+              <option selected>Any property</option>
+              <option>Apartment</option>
+              <option>House</option>
+              <option>Studio apartment</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputState" class="form-label">Bedroom</label>
+            <select id="inputState" class="form-select">
+              <option selected>Any</option>
+              <option>2 bedroom</option>
+              <option>3 bedroom</option>
+              <option>4+ bedroom</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="propertyType" class="form-label">Min Price</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-2">
+            <label for="propertyType" class="form-label">Max price</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-md-2">
+            <label for="inputState" class="form-label">Radius</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>0 km</option>
+              <option>+1 km</option>
+              <option>+2 km</option>
+              <option>+3 km</option>
+              <option>+5 km</option>
+              <option>+10 km</option>
+              <option>+20 km</option>
+            </select>
+          </div>
+          <div class="col-md-5">
+            <label for="Location" class="form-label">Keywords</label>
+            <input type="search" class="form-control" id="inputEmail4">
+          </div>
+          <div class="d-grid gap-2 col-2 btn-container">
+            <button class="btn btn-primary" type="button">Show results</button>
+          </div>
+        </form>
       </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">Property type</label>
-        <select id="inputState" class="form-select">
-          <option selected>Any property</option>
-          <option>Apartment</option>
-          <option>House</option>
-          <option>Studio apartment</option>
-        </select>
+    </div>
+
+
+    <!--Grid cards-->
+    <div class="row">
+      <div class="col-12 new-house-label">
+        <p>New to the market</p>  
       </div>
-      <div class="col-md-2">
-        <label for="inputState" class="form-label">Bedroom</label>
-        <select id="inputState" class="form-select">
-          <option selected>Any</option>
-          <option>2 bedroom</option>
-          <option>3 bedroom</option>
-          <option>4+ bedroom</option>
-        </select>
+    </div>
+    <div class="row row-cols row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./images/card1.jpeg" class="card-img-top" width="300px" height="300px" alt="apartment image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-2">
-        <label for="propertyType" class="form-label">Min Price</label>
-        <input type="text" class="form-control" id="inputPassword4">
+      <div class="col">
+        <div class="card">
+          <img src="./images/card2.jpeg" class="card-img-top card-image" width="300px" height="300px" alt="apartment image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-2">
-        <label for="propertyType" class="form-label">Max price</label>
-        <input type="text" class="form-control" id="inputPassword4">
+      <div class="col">
+        <div class="card">
+          <img src="./images/card3.jpeg" class="card-img-top card-image" width="300px" height="300px" alt="apartment image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-2">
-        <label for="inputState" class="form-label">Radius</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>0 km</option>
-          <option>+1 km</option>
-          <option>+2 km</option>
-          <option>+3 km</option>
-          <option>+5 km</option>
-          <option>+10 km</option>
-          <option>+20 km</option>
-        </select>
+      <div class="col">
+        <div class="card">
+          <img src="./images/card4.jpeg" class="card-img-top" width="300px" height="300px" alt="apartment image">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5">
-        <label for="Location" class="form-label">Keywords</label>
-        <input type="search" class="form-control" id="inputEmail4">
-      </div>
-      <div class="d-grid gap-2 col-2">
-        <button class="btn btn-primary" type="button">Show results</button>
-      </div>
-    </form>
+    </div>
 	  <!--footer-->
     <div class="row footer">
       <div class="col-md-3">

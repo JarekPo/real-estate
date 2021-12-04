@@ -19,6 +19,13 @@ body{
 .page-heading{
 	text-align: center;
 }
+.find-property-container {
+  border: solid 2px red;;
+  min-height: 500px;
+}
+.btn-container {
+  margin-top: 100px;
+}
 
 @media all and (max-width: 992px) {
   .logo-img{
