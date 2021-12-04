@@ -5,7 +5,7 @@ body{
 }
 .nav-menu-box{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: end;
   font-family: mojito, sans-serif;
   font-weight: 400;
