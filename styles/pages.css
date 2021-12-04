@@ -37,3 +37,21 @@
 	align-items: center;
 	align-self: center;
 }
+
+.contact-us-form{
+	color: #004463;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 5%;
+}
+.contact-us-form span, #form-sent-msg span{
+	color: #b80808;
+	font-weight:bold;
+}
+#form-sent-msg{
+	color: #004463;
+}
+.form-error-msg{
+	color: #b80808;
+	font-size:0.75em;
+}
