@@ -42,7 +42,7 @@
       </div>
     </div>
     <!--carousel-->
-    <div class="row">
+    <!-- <div class="row">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -64,80 +64,87 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
     <!--Form-->
-    <div class="find-property-container">
-      <div class="row">
-        <div class="col-12 section-name">
-         <p>Find property</p> 
+    <div class="fp-bg-body section-body">
+      <div class="fp-bg-filter">
+        <div class="fp-body">
+          <div class="row">
+            <div class="section-name">
+             <p>Find property</p> 
+            </div>
+            <form class="row g-3 fp-container ">
+              <div class="col-md-5">
+                <label for="Location" class="form-label">Location</label>
+                <input type="search" class="form-control fp-input" id="inputEmail4">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Property type</label>
+                <select id="inputState" class="form-select fp-input">
+                  <option selected>Any property</option>
+                  <option>Apartment</option>
+                  <option>House</option>
+                  <option>Studio apartment</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputState" class="form-label">Bedroom</label>
+                <select id="inputState" class="form-select fp-input">
+                  <option selected>Any</option>
+                  <option>2 bedroom</option>
+                  <option>3 bedroom</option>
+                  <option>4+ bedroom</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="propertyType" class="form-label">Min Price</label>
+                <input type="text" class="form-control fp-input" id="inputPassword4">
+              </div>
+              <div class="col-md-2">
+                <label for="propertyType" class="form-label">Max price</label>
+                <input type="text" class="form-control fp-input" id="inputPassword4">
+              </div>
+              <div class="col-md-2">
+                <label for="inputState" class="form-label">Radius</label>
+                <select id="inputState" class="form-select fp-input">
+                  <option selected>Choose...</option>
+                  <option>0 km</option>
+                  <option>+1 km</option>
+                  <option>+2 km</option>
+                  <option>+3 km</option>
+                  <option>+5 km</option>
+                  <option>+10 km</option>
+                  <option>+20 km</option>
+                </select>
+              </div>
+              <div class="col-md-5">
+                <label for="Location" class="form-label">Keywords</label>
+                <input type="search" class="form-control fp-input" id="inputEmail4">
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-primary fp-button" type="button">Show results</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <form class="row g-3">
-          <div class="col-md-5">
-            <label for="Location" class="form-label">Location</label>
-            <input type="search" class="form-control" id="inputEmail4">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">Property type</label>
-            <select id="inputState" class="form-select">
-              <option selected>Any property</option>
-              <option>Apartment</option>
-              <option>House</option>
-              <option>Studio apartment</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputState" class="form-label">Bedroom</label>
-            <select id="inputState" class="form-select">
-              <option selected>Any</option>
-              <option>2 bedroom</option>
-              <option>3 bedroom</option>
-              <option>4+ bedroom</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="propertyType" class="form-label">Min Price</label>
-            <input type="text" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-md-2">
-            <label for="propertyType" class="form-label">Max price</label>
-            <input type="text" class="form-control" id="inputPassword4">
-          </div>
-          <div class="col-md-2">
-            <label for="inputState" class="form-label">Radius</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>0 km</option>
-              <option>+1 km</option>
-              <option>+2 km</option>
-              <option>+3 km</option>
-              <option>+5 km</option>
-              <option>+10 km</option>
-              <option>+20 km</option>
-            </select>
-          </div>
-          <div class="col-md-5">
-            <label for="Location" class="form-label">Keywords</label>
-            <input type="search" class="form-control" id="inputEmail4">
-          </div>
-          <div class="d-grid gap-2 col-2 btn-container">
-            <button class="btn btn-primary" type="button">Show results</button>
-          </div>
-        </form>
       </div>
     </div>
+
+    <!--Divider-->
+    <div class="section-devider"></div>
 
 
     <!--Grid cards-->
     <div class="row">
-      <div class="col-12 new-house-label">
-        <p>New to the market</p>  
+      <div class="section-name" id="new-to-market">
+        <p>Latest featured homes</p>  
       </div>
     </div>
     <div class="row row-cols row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
           <img src="./images/card1.jpeg" class="card-img-top" width="300px" height="300px" alt="apartment image">
-          <div class="card-body">
+          <div class="card-body card-text-box">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
@@ -146,7 +153,7 @@
       <div class="col">
         <div class="card">
           <img src="./images/card2.jpeg" class="card-img-top card-image" width="300px" height="300px" alt="apartment image">
-          <div class="card-body">
+          <div class="card-body card-text-box">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
@@ -155,7 +162,7 @@
       <div class="col">
         <div class="card">
           <img src="./images/card3.jpeg" class="card-img-top card-image" width="300px" height="300px" alt="apartment image">
-          <div class="card-body">
+          <div class="card-body card-text-box">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
           </div>
@@ -164,13 +171,66 @@
       <div class="col">
         <div class="card">
           <img src="./images/card4.jpeg" class="card-img-top" width="300px" height="300px" alt="apartment image">
-          <div class="card-body">
+          <div class="card-body card-text-box">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
       </div>
     </div>
+
+    <!--Divider-->
+    <div class="section-devider"></div>
+
+    <!--Group cards Section: Buy, Sale, Rent-->
+    <div class="row">
+      <div class="section-name" id="valuation">
+        <p>Free valuation?</p>
+        <button class="btn btn-outline-dark fp-button" type="button">Go!</button>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/group-card-2.jpeg" class="card-img-top" width="300px" height="200px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Buy</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/group-card-3.jpeg" class="card-img-top" width="300px" height="200px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sale</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./images/group-card-1.jpeg" class="card-img-top" width="300px" height="200px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rent</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Divider-->
+    <div class="section-devider"></div>
+
 	  <!--footer-->
     <div class="row footer">
       <div class="col-md-3">

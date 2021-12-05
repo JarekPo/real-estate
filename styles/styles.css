@@ -3,15 +3,23 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+.section-devider {
+  margin: 50px 0px;
+  width: 100%;
+  border: solid 2px #2880b9;
+}
 .nav-menu-box{
   display: flex;
   justify-content: flex-end;
   align-items: end;
+  
+}
+.nav-link {
   font-family: mojito, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
-  color: #2880b9;
+  color: rgba(41, 128, 185, 1);
 }
 .row{
 	margin: 20px auto;
@@ -19,12 +27,63 @@ body{
 .page-heading{
 	text-align: center;
 }
-.find-property-container {
-  border: solid 2px red;;
+.section-name {
+  padding-left: calc(var(--bs-gutter-x)*3);
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#new-to-market {
+  color:  rgb(12 58 88);
+}
+#valuation {
+  display: flex;
+  flex-direction: row;
+}
+
+.section-body {
+  display: flex;
+  height: 75vh;
+}
+.fp-bg-body {
+  background-image: url("../images/wall.jpg");
   min-height: 500px;
+  color: azure;
+}
+.fp-bg-filter {
+  display: flex;
+  background-color: rgba(100, 147, 169, 0.6);
+}
+
+.fp-body {
+  place-self: center;
+}
+
+.fp-container {
+  place-content: center;
+}
+
+.fp-input {
+  line-height: 2.0;
+}
+
+.fp-button {
+  padding: 8px 32px;
+  white-space: nowrap;
+}
+
+.card-text-box {
+  height: 150px;
+  overflow-y: hidden;
 }
 .btn-container {
+  display: flex;
+  padding-right: calc(var(--bs-gutter-x)*4);
+  place-content: flex-end;
   margin-top: 100px;
+}
+.card {
+  
 }
 
 @media all and (max-width: 992px) {
