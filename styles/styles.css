@@ -82,8 +82,8 @@ body{
   place-content: flex-end;
   margin-top: 100px;
 }
-.card {
-  
+.val-button {
+  margin: 0 20px;
 }
 
 @media all and (max-width: 992px) {
