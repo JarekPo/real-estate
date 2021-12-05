@@ -12,7 +12,6 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: end;
-  
 }
 .nav-link {
   font-family: mojito, sans-serif;
@@ -28,7 +27,6 @@ body{
 	text-align: center;
 }
 .section-name {
-  padding-left: calc(var(--bs-gutter-x)*3);
   font-size: 26px;
   font-weight: 600;
   text-transform: capitalize;
@@ -86,7 +84,7 @@ body{
   margin: 0 20px;
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 992px) and (min-width: 575px) {
   .logo-img{
     text-align: center;
   }
@@ -96,5 +94,29 @@ body{
   .nav-menu{
     flex-wrap: nowrap;
     white-space: nowrap;
+  }
+  .section-body {
+    display: flex;
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .logo-img{
+    text-align: center;
+  }
+  .nav-menu-box{
+    justify-content: center !important;
+  }
+  .nav-menu{
+    flex-wrap: wrap;
+    white-space: nowrap;
+  }
+  .section-body {
+    display: flex;
+    height: 100%;
+  }
+  .nav-link {
+    font-size: 28px;
   }
 }
