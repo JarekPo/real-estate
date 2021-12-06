@@ -71,17 +71,17 @@
         <div class="fp-body">
           <div class="row">
 
-            <form class="row g-3 fp-container">
+            <form name="searchForm" class="row g-3 fp-container">
               <div class="section-name col-md-11">
                 <p>Find property</p> 
               </div>
               <div class="col-md-5">
-                <label for="Location" class="form-label">Location</label>
-                <input type="search" class="form-control fp-input" id="inputEmail4">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" oninput="validation('location')" id="location" placeholder="Dublin" class="form-control fp-input"   required>
               </div>
               <div class="col-md-4">
-                <label for="inputState" class="form-label">Property type</label>
-                <select id="inputState" class="form-select fp-input">
+                <label for="propertyType" class="form-label">Property type</label>
+                <select id="propertyType" class="form-select fp-input" oninput="handleSelectChange('propertyType')">
                   <option selected>Any property</option>
                   <option>Apartment</option>
                   <option>House</option>
@@ -89,8 +89,8 @@
                 </select>
               </div>
               <div class="col-md-2">
-                <label for="inputState" class="form-label">Bedroom</label>
-                <select id="inputState" class="form-select fp-input">
+                <label for="bedroom" class="form-label">Bedroom</label>
+                <select id="bedroom" class="form-select fp-input" oninput="handleSelectChange('bedroom')">
                   <option selected>Any</option>
                   <option>2 bedroom</option>
                   <option>3 bedroom</option>
@@ -98,17 +98,17 @@
                 </select>
               </div>
               <div class="col-md-2">
-                <label for="propertyType" class="form-label">Min Price</label>
-                <input type="text" class="form-control fp-input" id="inputPassword4">
+                <label for="minPrice" class="form-label">Min Price</label>
+                <input type="text" id="minPrice" class="form-control fp-input" placeholder="100+" oninput="validation('minPrice')" >
               </div>
               <div class="col-md-2">
-                <label for="propertyType" class="form-label">Max price</label>
-                <input type="text" class="form-control fp-input" id="inputPassword4">
+                <label for="maxPrice" class="form-label">Max price</label>
+                <input type="text" id="maxPrice" class="form-control fp-input" placeholder="> 5000" oninput="validation('maxPrice')">
               </div>
               <div class="col-md-2">
-                <label for="inputState" class="form-label">Radius</label>
-                <select id="inputState" class="form-select fp-input">
-                  <option selected>Choose...</option>
+                <label for="radius" class="form-label">Radius</label>
+                <select id="radius" class="form-select fp-input" oninput="handleSelectChange('radius')">
+                  <option selected>Select</option>
                   <option>0 km</option>
                   <option>+1 km</option>
                   <option>+2 km</option>
