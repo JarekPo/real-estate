@@ -2,7 +2,7 @@
 	text-align: center;
 	color:#004463;
 }
-.pages-section-name, .contact-us-address h4, #form-sent-msg{
+.pages-section-name, .contact-us-address h4, .contact-us-form-label, #form-sent-msg{
 	color: #004463;
 }
 
@@ -13,6 +13,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 500px;
+	padding-top: 15px;
+	border-radius: 4px;
 }
 .contact-us-address{
 	display: flex;
@@ -46,6 +48,16 @@
 	font-weight: bold;
 }
 
+.residental-property-cards{
+	justify-content: space-between;
+}
+.property-pic{
+	margin-top: 10px;
+}
+.property-form-select{
+	margin: 10px 0;
+}
+
 .residental-property-team{
 	display: flex;
 	justify-content: space-around;
@@ -55,7 +67,6 @@
 }
 
 .footer{
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	text-align: left;
@@ -74,7 +85,7 @@
 	text-decoration: underline;
 }
 .footer-links, .footer-info, .footer-logo{
-	width:90%;
+	width:100%;
 	margin: 10px auto;
 	list-style: none;
 }
@@ -86,4 +97,11 @@
 	width:50%;
 	text-align: center;
 	margin: auto;
+}
+
+@media all and (max-width: 767px) {
+	.footer-links, .footer-info, .footer-logo{
+		padding: 0;
+		text-align: center;
+	}
 }

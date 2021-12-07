@@ -91,14 +91,14 @@
 				</div>
 			</div>
 				<div class="col-lg-5">	
-					<select id="propertyType" class="form-select" aria-label="Property type">
+					<select id="propertyType" class="form-select property-form-select" aria-label="Property type">
 					  <option selected>Property Type</option>
 					  <option value="House">House</option>
 					  <option value="Apartament">Apartament</option>
 					  <option value="Bungalow">Bungalow</option>
 					  <option value="All">All</option>
 					</select>
-					<select id="minBeds" class="form-select" aria-label="Min bedrooms">
+					<select id="minBeds" class="form-select property-form-select" aria-label="Min bedrooms">
 					  <option selected>Min bedrooms</option>
 					  <option value="1">1 bed</option>
 					  <option value="2">2 beds</option>
@@ -108,14 +108,14 @@
 					</select>
 				</div>
 				<div class="col-lg-5">
-					<select id="maxPriceSearch" class="form-select" aria-label="Max price buy">
+					<select id="maxPriceSearch" class="form-select property-form-select" aria-label="Max price buy">
 					  <option selected>Max price</option>
 					  <option value="100k">€100k</option>
 					  <option value="200k">€200k</option>
 					  <option value="300k">€300k</option>
 					  <option value="All">All</option>
 					</select>
-					<select id="maxRentSearch" class="form-select" aria-label="Max rent">
+					<select id="maxRentSearch" class="form-select property-form-select" aria-label="Max rent">
 					  <option selected>Max rent</option>
 					  <option value="500">€500</option>
 					  <option value="1000">€1000</option>
@@ -124,7 +124,7 @@
 					</select>
 				</div>
 				<div class="col-lg-2">
-					<button type="submit" class="btn btn-primary residental-property-btn" onclick="searchSelected()">Search</button>
+					<button type="submit" class="btn btn-primary property-form-select residental-property-btn" onclick="searchSelected()">Search</button>
 				</div>
 			</div>
 			
@@ -135,13 +135,12 @@
 			<div class="row">
 				<h3 class="pages-section-name">Available properties</h3>
 			</div>
-			<div class="row">
-				<div class="col-md-3 property-pic price-200 3-beds house">
-					<div class="card" style="width: 18rem;">
+			<div class="row residental-property-cards">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds house">
+					<div class="card">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for sale</h5>
 						  <div class="card-header">
 							For Sale
 						  </div>
@@ -154,12 +153,11 @@
 					</div>
 				</div>
 			
-				<div class="col-lg-3 property-pic price-300 4-beds house">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-300 4-beds house">
+					<div class="card">
+					  <img src="../images/house1.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for sale</h5>
 						  <div class="card-header">
 							For Sale
 						  </div>
@@ -172,12 +170,11 @@
 					</div>
 				</div>
 				
-				<div class="col-md-3 property-pic rent-1000 3-beds bungalow">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 3-beds bungalow">
+					<div class="card">
+					  <img src="../images/bungalow.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for rent</h5>
 						  <div class="card-header">
 							To Let
 						  </div>
@@ -190,12 +187,11 @@
 					</div>
 				</div>
 			
-				<div class="col-lg-3 property-pic price-200 3-beds apartament">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds apartament">
+					<div class="card">
+					  <img src="../images/apartment.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for sale</h5>
 						  <div class="card-header">
 							For Sale
 						  </div>
@@ -209,12 +205,11 @@
 				</div>
 			<!--</div>
 			<div class="row">-->
-				<div class="col-md-3 property-pic rent-1000 2-beds house">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 2-beds house">
+					<div class="card">
+					  <img src="../images/house2.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for rent</h5>
 						  <div class="card-header">
 							To Let
 						  </div>
@@ -227,12 +222,11 @@
 					</div>
 				</div>
 			
-				<div class="col-lg-3 property-pic price-100 1-bed apartament">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-100 1-bed apartament">
+					<div class="card">
+					  <img src="../images/apartment1.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for sale</h5>
 						  <div class="card-header">
 							For Sale
 						  </div>
@@ -245,12 +239,11 @@
 					</div>
 				</div>
 				
-				<div class="col-md-3 property-pic rent-1500 4-beds house">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1500 4-beds house">
+					<div class="card">
+					  <img src="../images/house3.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for rent</h5>
 						  <div class="card-header">
 							To Let
 						  </div>
@@ -263,12 +256,11 @@
 					</div>
 				</div>
 			
-				<div class="col-lg-3 property-pic rent-500 2-beds bungalow">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-500 2-beds bungalow">
+					<div class="card">
+					  <img src="../images/house4.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for rent</h5>
 						  <div class="card-header">
 							To Let
 						  </div>
@@ -282,12 +274,11 @@
 				</div>
 			<!--</div>
 			<div class="row">-->
-				<div class="col-md-3 property-pic price-200 2-beds bungalow">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 2-beds bungalow">
+					<div class="card">
+					  <img src="../images/apartment3.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for sale</h5>
 						  <div class="card-header">
 							For Sale
 						  </div>
@@ -300,12 +291,11 @@
 					</div>
 				</div>
 			
-				<div class="col-lg-3 property-pic rent-1000 3-beds apartament">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 3-beds apartament">
+					<div class="card">
+					  <img src="../images/apartment4.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for rent</h5>
 						  <div class="card-header">
 							To Let
 						  </div>
@@ -318,12 +308,28 @@
 					</div>
 				</div>
 				
-				<div class="col-md-3 property-pic price-200 3-beds bungalow">
-					<div class="card" style="width: 18rem;">
-					  <img src="../images/house.jpg" class="card-img-top" alt="house">
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 2-beds house">
+					<div class="card">
+					  <img src="../images/house2.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<p class="card-text">Title</p>
+						<h5 class="card-title">Property for rent</h5>
+						  <div class="card-header">
+							To Let
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item">€800</li>
+							<li class="list-group-item">2 bedrooms</li>
+							<li class="list-group-item">Semi-detached House</li>
+						  </ul>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds bungalow">
+					<div class="card">
+					  <img src="../images/apartment2.jpg" class="card-img-top" alt="house">
+					  <div class="card-body">
+						<h5 class="card-title">Property for sale</h5>
 						  <div class="card-header">
 							For Sale
 						  </div>
