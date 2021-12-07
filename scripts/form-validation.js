@@ -19,7 +19,7 @@ function formValidation(){
 	if(nameError==false && telError==false && emailError==false && msgError==false){
 		form.classList.add("contact-us-form");
 		document.getElementById("form").innerHTML="Dear <span>"+userName+"</span>, thank you for your message. <br />We will contact you shortly.";
-		document.getElementById("form-sent-msg").innerHTML="Your message: <br />Name: <span>"+userName+"</span><br /> Tel. <span>"+userTel+"</span><br /> Email: <span>"+userEmail+"</span><br /> Message: "+userMsg;
+		document.getElementById("form-sent-msg").innerHTML="Your message: "+userMsg+"<br />Name: <span>"+userName+"</span><br /> Tel. <span>"+userTel+"</span><br /> Email: <span>"+userEmail+"</span>";
 	}
 }
 

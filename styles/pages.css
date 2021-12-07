@@ -1,3 +1,59 @@
+.page-heading{
+	text-align: center;
+	color:#004463;
+}
+.pages-section-name, .contact-us-address h4, #form-sent-msg{
+	color: #004463;
+}
+
+.contact-us-contact-row{
+	color: white;
+	background-image: url("../images/contact-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+}
+.contact-us-address{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+}
+
+.contact-us-form{
+	color: #004463;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 5%;
+}
+.contact-us-form span, #form-sent-msg span{
+	color: #b80808;
+	font-weight:bold;
+}
+.contact-us-btn, .residental-property-btn{
+	background: #004463;
+	border: 1px solid white;
+}
+.contact-us-btn:hover, .residental-property-btn:hover{
+	background: #2880B9;
+	border: 1px solid #004463;
+}
+
+.form-error-msg{
+	color: #b80808;
+	font-size:0.75em;
+	font-weight: bold;
+}
+
+.residental-property-team{
+	display: flex;
+	justify-content: space-around;
+}
+.residental-property-team h3{
+	text-align: center;
+}
+
 .footer{
 	display: flex;
 	justify-content: space-between;
@@ -30,28 +86,4 @@
 	width:50%;
 	text-align: center;
 	margin: auto;
-}
-.address{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-self: center;
-}
-
-.contact-us-form{
-	color: #004463;
-	font-size: 1.5em;
-	text-align: center;
-	padding: 5%;
-}
-.contact-us-form span, #form-sent-msg span{
-	color: #b80808;
-	font-weight:bold;
-}
-#form-sent-msg{
-	color: #004463;
-}
-.form-error-msg{
-	color: #b80808;
-	font-size:0.75em;
 }
