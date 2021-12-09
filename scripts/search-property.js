@@ -19,28 +19,21 @@ var rent1500=document.getElementsByClassName("rent-1500");
 function searchForSale(){
 	document.getElementById("maxRentSearch").style.display="none";
 	document.getElementById("maxPriceSearch").style.display="block";
-	console.log(document.querySelector('input[name="radio"]').checked);
 }
 
 //Hide max price
 function searchToLet(){
 	document.getElementById("maxPriceSearch").style.display="none";
 	document.getElementById("maxRentSearch").style.display="block";
-	console.log(document.querySelector('input[name="radio"]').checked);
 }
 
 //Filter and search for selected properties
 function searchSelected(){
 	var checked=document.querySelector('input[name="radio"]:checked').value;
-	console.log(checked);
 	var selectedType=document.getElementById("propertyType").value;
-	console.log("type"+selectedType)
 	var selectedBeds=document.getElementById("minBeds").value;
-	console.log("beds"+selectedBeds)
 	var selectedPrice=document.getElementById("maxPriceSearch").value;
-	console.log("maxPrice"+selectedPrice)
 	var selectedRent=document.getElementById("maxRentSearch").value;
-	console.log("maxRent"+selectedRent)
 	
 	var properties=document.getElementsByClassName("property-pic");
 	for(i=0;i<properties.length;i++){
@@ -56,9 +49,15 @@ function searchSelected(){
 	else if(selectedType=="Bungalow"){
 		displayBungalows();
 	}
+	else if(selectedType=="All"){
+		displayHouses();
+		displayApartaments();
+		displayBungalows();
+	}
 	
 }
 
+//Display selected cards functions
 function displayHouses(){
 	for(i=0;i<house.length;i++){
 		house[i].style.display="block";
@@ -75,6 +74,7 @@ function displayBungalows(){
 	}
 }
 
+//Aditional function for selecting cards - for further development in the future
 function display1Bed(){
 	for(i=0;i<oneBed.length;i++){
 		oneBed[i].style.display="block";
@@ -92,7 +92,6 @@ function display3Beds(){
 		threeBeds[i].style.display="block";
 	}
 }
-
 
 function display4Beds(){
 	for(i=0;i<fourBeds.length;i++){

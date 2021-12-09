@@ -51,9 +51,7 @@
 .residental-property-cards{
 	justify-content: space-between;
 }
-.property-pic{
-	margin-top: 10px;
-}
+
 .property-form-select{
 	margin: 10px 0;
 }
@@ -65,11 +63,10 @@
 .about-us-team h3{
 	text-align: center;
 }
-.team-pic{
+.team-pic, .property-pic{
 	margin-top: 10px;
 	color: #004463;
-	text-align: center;
-	
+	text-align: center;	
 }
 .about-us-card{
 	border: 1px solid #2880B9;

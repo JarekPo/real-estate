@@ -7,10 +7,10 @@ let userName;
 let userTel;
 let userEmail;
 let userMsg;
-		
+
+// Function that validates if all the fields are correct and displays message to the user
 function formValidation(){
 	event.preventDefault();
-	console.log("name"+name+"name");
 	nameValidation();
 	telValidation();
 	emailValidation();
@@ -23,6 +23,7 @@ function formValidation(){
 	}
 }
 
+// User name imput validation - cannot be empty
 function nameValidation(){
 	let name=document.getElementById("form-name").value;
 	userName=name;
@@ -36,6 +37,7 @@ function nameValidation(){
 	
 }
 
+// User tel number validation - allows only numbers and chracters used in phone numbers
 function telValidation(){
 	let tel=document.getElementById("form-tel").value;
 	let telValues=[0,1,2,3,4,5,6,7,8,9,"+","(",")"," "];
@@ -55,6 +57,7 @@ function telValidation(){
 	}
 }
 
+// User email validation - email is valid it @ symbol is present
 function emailValidation(){
 	let email=document.getElementById("form-email").value;
 	userEmail=email;
@@ -71,6 +74,7 @@ function emailValidation(){
 	
 }
 
+// User message validation - no empty imput allowed
 function msgValidation(){
 	let msg=document.getElementById("form-msg").value;
 	userMsg=msg;
