@@ -19,6 +19,8 @@
 		<!-- Adobe font -->
 		<link rel="stylesheet" href="https://use.typekit.net/ohf5snz.css">
 		
+		<!-- jQuerry -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 	  <div class="container">
@@ -176,6 +178,9 @@
 					<h5 class="card-title about-us-card-title">Igor Tokarev</h5>
 					<hr />
 					<p class="card-text about-us-card-text">Real Estate Agency<br /> Co-founder</p>
+					<p class="card-text about-us-card-text" id="show-number-igor">Show mobile number</p>
+					<p class="card-text about-us-card-text" id="hide-number-igor">Hide mobile number</p>
+					<p class="card-text about-us-card-text" id="hidden-number-igor">087 6543210</p>
 				  </div>
 				</div>
 			</figure>
@@ -187,6 +192,10 @@
 					<h5 class="card-title about-us-card-title">Jaroslaw Polowy</h5>
 					<hr />
 					<p class="card-text about-us-card-text">Real Estate Agency<br /> Co-founder</p>
+					<p class="card-text about-us-card-text" id="show-number-jarek">Show mobile number</p>
+					<p class="card-text about-us-card-text" id="hide-number-jarek">Hide mobile number</p>
+					<p class="card-text about-us-card-text" id="hidden-number-jarek">087 1234567</p>
+					
 				  </div>
 				</div>
 			</figure>
@@ -234,9 +243,32 @@
 		</footer>
 		
 	  </div>
+	  <!-- jQuerry script for authors contact -->
+	  <script>
+		$("#show-number-jarek").click(function(){
+		  $("#hidden-number-jarek").fadeIn(1000);
+		  $("#show-number-jarek").fadeOut(0);
+		  $("#hide-number-jarek").fadeIn(0);
+		});
+		$("#hide-number-jarek").click(function(){
+		  $("#hidden-number-jarek").fadeOut(1000);
+		  $("#hide-number-jarek").fadeOut(0);
+		  $("#show-number-jarek").fadeIn(0);
+		});
+		$("#show-number-igor").click(function(){
+		  $("#hidden-number-igor").fadeIn(1000);
+		  $("#show-number-igor").fadeOut(0);
+		  $("#hide-number-igor").fadeIn(0);
+		});
+		$("#hide-number-igor").click(function(){
+		  $("#hidden-number-igor").fadeOut(1000);
+		  $("#hide-number-igor").fadeOut(0);
+		  $("#show-number-igor").fadeIn(0);
+		});
+	  </script>
 	  <!-- JavaScript Bundle with Popper Bootstrap-->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	  <!-- Local JS script files -->
-	  <script src="/scripts/app.js"></script>
+	  <script src="../scripts/app.js"></script>
 	</body>
 </html>

@@ -81,6 +81,18 @@
 	padding: 2px;
 }
 
+#hidden-number-jarek, #hidden-number-igor, #hide-number-jarek, #hide-number-igor{
+	display: none;
+}
+#show-number-jarek, #show-number-igor, #hide-number-jarek, #hide-number-igor{
+	font-size: 80%;
+	color: #2880B9;
+	border: 1px solid #2880B9;
+}
+#show-number-jarek:hover, #show-number-igor:hover, #hide-number-jarek:hover, #hide-number-igor:hover{
+	cursor: pointer;
+}
+
 .footer{
 	justify-content: space-between;
 	align-items: center;
