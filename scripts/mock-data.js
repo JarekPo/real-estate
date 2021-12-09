@@ -1,5 +1,4 @@
-function mockedProperties() {
-  return [{
+const properties = [{
     location: "Dublin",
     name: "Lucky apartment",
     type: "Apartment",
@@ -55,5 +54,4 @@ function mockedProperties() {
     bedroomCount: "3 bedroom",
     price: 780,
     image: "./images/card4.jpeg"
-  }]
-}
+  }];
