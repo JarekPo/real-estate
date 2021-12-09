@@ -24,11 +24,11 @@
 	  <div class="container">
 	  
 	  <!-- Header -->
-		<div class="header row">
+		<header class="header row">
 		  <div class="logo-img col-lg-4 col-12">
 			  <img src="../images/logo.png" alt="logo" width="250" height="100">
 		  </div>
-		  <div class="nav-menu-box col-lg-8 col-12">
+		  <nav class="nav-menu-box col-lg-8 col-12">
 			<ul class="nav nav-menu justify-content-end">
 			  <li class="nav-item">
 				<a class="nav-link" href="../">Home</a>
@@ -43,24 +43,23 @@
 				<a class="nav-link" href="../about-us/">About us</a>
 			  </li>
 			</ul>
-		  </div>
-		</div>
+		  </nav>
+		</header>
 		
 		<!-- Carousel -->
-		
-		<div class="row">
+		<section class="row">
 		  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 			<div class="carousel-inner">
-			  <div class="carousel-item active">
+			  <figure class="carousel-item active">
 				<img src="../images/c1.jpg" class="d-block w-100" alt="carousel picture">
-			  </div>
-			  <div class="carousel-item">
+			  </figure>
+			  <figure class="carousel-item">
 				<img src="../images/c4.jpg" class="d-block w-100" alt="carousel picture">
-			  </div>
-			  <div class="carousel-item">
+			  </figure>
+			  <figure class="carousel-item">
 				<img src="../images/c3.jpg" class="d-block w-100" alt="carousel picture">
 			  </div>
-			</div>
+			</figure>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
 			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			  <span class="visually-hidden">Previous</span>
@@ -70,26 +69,27 @@
 			  <span class="visually-hidden">Next</span>
 			</button>
 		  </div>
-		</div>
+		</section>
 		
 		<!--Devider-->
 		<div class="section-devider"></div>
-
-		<!-- Search property type -->
-		<div class="row">
-			<div class="col-lg-12">
-				<h3 class="pages-section-name">Property Search</h3>
-			</div>
-			<div class="col-lg-12">
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="radio" id="forSale" value="forSale" onchange="searchForSale()">
-				  <label class="form-check-label" for="forSale">For Sale</label>
+		
+		<main>
+			<!-- Search property type -->
+			<section class="row">
+				<div class="col-lg-12">
+					<h3 class="pages-section-name">Property Search</h3>
 				</div>
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="radio" id="toLet" value="toLet" onchange="searchToLet()">
-				  <label class="form-check-label" for="toLet">To let</label>
+				<div class="col-lg-12">
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="radio" id="forSale" value="forSale" onchange="searchForSale()">
+					  <label class="form-check-label" for="forSale">For Sale</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="radio" id="toLet" value="toLet" onchange="searchToLet()">
+					  <label class="form-check-label" for="toLet">To let</label>
+					</div>
 				</div>
-			</div>
 				<div class="col-lg-5">	
 					<select id="propertyType" class="form-select property-form-select" aria-label="Property type">
 					  <option selected>Property Type</option>
@@ -126,8 +126,8 @@
 				<div class="col-lg-2">
 					<button type="submit" class="btn btn-primary property-form-select residental-property-btn" onclick="searchSelected()">Search</button>
 				</div>
-			</div>
-			
+			</section>
+				
 			<!--Devider-->
 			<div class="section-devider"></div>
 		
@@ -135,8 +135,8 @@
 			<div class="row">
 				<h3 class="pages-section-name">Available properties</h3>
 			</div>
-			<div class="row residental-property-cards">
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds house">
+			<section class="row residental-property-cards">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds house">
 					<div class="card">
 					  <img src="../images/house.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -151,9 +151,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 			
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-300 4-beds house">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic price-300 4-beds house">
 					<div class="card">
 					  <img src="../images/house1.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -168,9 +168,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 				
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 3-beds bungalow">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 3-beds bungalow">
 					<div class="card">
 					  <img src="../images/bungalow.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -185,9 +185,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 			
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds apartament">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds apartament">
 					<div class="card">
 					  <img src="../images/apartment.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -202,10 +202,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
-			<!--</div>
-			<div class="row">-->
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 2-beds house">
+				</figure>
+
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 2-beds house">
 					<div class="card">
 					  <img src="../images/house2.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -220,9 +219,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 			
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-100 1-bed apartament">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic price-100 1-bed apartament">
 					<div class="card">
 					  <img src="../images/apartment1.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -237,9 +236,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 				
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1500 4-beds house">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1500 4-beds house">
 					<div class="card">
 					  <img src="../images/house3.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -254,9 +253,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 			
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-500 2-beds bungalow">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic rent-500 2-beds bungalow">
 					<div class="card">
 					  <img src="../images/house4.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -271,10 +270,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
-			<!--</div>
-			<div class="row">-->
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 2-beds bungalow">
+				</figure>
+
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 2-beds bungalow">
 					<div class="card">
 					  <img src="../images/apartment3.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -289,9 +287,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 			
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 3-beds apartament">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 3-beds apartament">
 					<div class="card">
 					  <img src="../images/apartment4.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -306,9 +304,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 				
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 2-beds house">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic rent-1000 2-beds house">
 					<div class="card">
 					  <img src="../images/house2.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -323,9 +321,9 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
+				</figure>
 				
-				<div class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds bungalow">
+				<figure class="col-lg-3 col-md-4 col-sm-5 property-pic price-200 3-beds bungalow">
 					<div class="card">
 					  <img src="../images/apartment2.jpg" class="card-img-top" alt="house">
 					  <div class="card-body">
@@ -340,49 +338,49 @@
 						  </ul>
 					  </div>
 					</div>
-				</div>
-			</div>
-			
+				</figure>
+			</section>
+		</main>
 		<!--Devider-->
 		<div class="section-devider"></div>
 			
 		<!-- Footer -->
-			<div class="row footer">
-				<div class="col-md-3">
-					<ul class="footer-logo">
-						<a href="../"><img src="../images/logo-small.png" width="150px" alt="page logo"></a>
-						<p>&copy Real Estate Agency 2021</p>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer-links">
-						<li><a href="../">Home</a></li>
-						<li><a href="#">Residental Property</a></li>
-						<li><a href="../contact/">Contact Us</a></li>
-						<li><a href="../about-us/">About Us</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer-info">
-						<li><span>Real Estate Agency<span></li>
-						<li>10 Example Street</li>
-						<li>Blanchardstown</li>
-						<li>Dublin 15</li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="footer-info">
-						<li><span>Email:</span></li>
-						<li>contact@realestate.ie</li>
-						<li><span>Tel:</span></li>
-						<li>01 987654321</li>
-					</ul>
-				</div>
-				<div class="footer-project">
-					<hr>
-					<p><a href="https://www.ncirl.ie/" target="_blank">NCI Project</a><p>
-				</div>
+		<footer class="row footer">
+			<div class="col-md-3">
+				<ul class="footer-logo">
+					<a href="../"><img src="../images/logo-small.png" width="150px" alt="page logo"></a>
+					<p>&copy Real Estate Agency 2021</p>
+				</ul>
 			</div>
+			<div class="col-md-3">
+				<ul class="footer-links">
+					<li><a href="../">Home</a></li>
+					<li><a href="#">Residental Property</a></li>
+					<li><a href="../contact/">Contact Us</a></li>
+					<li><a href="../about-us/">About Us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="footer-info">
+					<li><span>Real Estate Agency<span></li>
+					<li>10 Example Street</li>
+					<li>Blanchardstown</li>
+					<li>Dublin 15</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul class="footer-info">
+					<li><span>Email:</span></li>
+					<li>contact@realestate.ie</li>
+					<li><span>Tel:</span></li>
+					<li>01 987654321</li>
+				</ul>
+			</div>
+			<div class="footer-project">
+				<hr>
+				<p><a href="https://www.ncirl.ie/" target="_blank">NCI Project</a><p>
+			</div>
+		</footer>
 	  </div>
 	  <!-- JavaScript Bundle with Popper Bootstrap -->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

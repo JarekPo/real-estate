@@ -58,12 +58,27 @@
 	margin: 10px 0;
 }
 
-.residental-property-team{
+.about-us-team{
 	display: flex;
 	justify-content: space-around;
 }
-.residental-property-team h3{
+.about-us-team h3{
 	text-align: center;
+}
+.team-pic{
+	margin-top: 10px;
+	color: #004463;
+	text-align: center;
+	
+}
+.about-us-card{
+	border: 1px solid #2880B9;
+}
+.about-us-card-body{
+	border-top: 1px solid #2880B9;
+}
+.about-us-img{
+	padding: 2px;
 }
 
 .footer{
@@ -103,5 +118,8 @@
 	.footer-links, .footer-info, .footer-logo{
 		padding: 0;
 		text-align: center;
+	}
+	.team-pic{
+		max-width: 300px;
 	}
 }
