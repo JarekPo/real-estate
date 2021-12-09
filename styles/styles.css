@@ -23,9 +23,7 @@ body{
 .row{
 	margin: 20px auto;
 }
-.page-heading{
-	text-align: center;
-}
+
 .section-name {
   font-size: 26px;
   font-weight: 600;

@@ -18,17 +18,19 @@
 		
 		<!-- Adobe font -->
 		<link rel="stylesheet" href="https://use.typekit.net/ohf5snz.css">
-
+		
+		<!-- jQuerry -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 	  <div class="container">
 	  
-	  <!-- header -->
-		<div class="header row">
+		<!-- header -->
+		<header class="header row">
 		  <div class="logo-img col-lg-4 col-12">
 			  <img src="../images/logo.png" alt="logo" width="250" height="100">
 		  </div>
-		  <div class="nav-menu-box col-lg-8 col-12">
+		  <nav class="nav-menu-box col-lg-8 col-12">
 			<ul class="nav nav-menu justify-content-end">
 			  <li class="nav-item">
 				<a class="nav-link" href="../">Home</a>
@@ -43,27 +45,36 @@
 				<a class="nav-link" href="#">About us</a>
 			  </li>
 			</ul>
-		  </div>
-		</div>
+		  </nav>
+		</header>
 		
-		<!-- carousel -->
-		<div class="row">
-			<div class="col-lg-12">	
-				<div id="carouselContact" class="carousel slide" data-bs-ride="carousel">
-				  <div class="carousel-inner">
-					<div class="carousel-item active">
-					  <img src="../images/contact11.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item">
-					  <img src="../images/contact22.jpg" class="d-block w-100" alt="...">
-					</div>
-					<div class="carousel-item">
-					  <img src="../images/contact33.jpg" class="d-block w-100" alt="...">
-					</div>
-				  </div>
-				</div>
-			</div>
-		</div>
+		<!-- Carousel -->
+		<section class="row">
+		  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			  <figure class="carousel-item active">
+				<img src="../images/c1.jpg" class="d-block w-100" alt="carousel picture">
+			  </figure>
+			  <figure class="carousel-item">
+				<img src="../images/c4.jpg" class="d-block w-100" alt="carousel picture">
+			  </figure>
+			  <figure class="carousel-item">
+				<img src="../images/c3.jpg" class="d-block w-100" alt="carousel picture">
+			  </div>
+			</figure>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		</section>
+		
+		<!--Devider-->
+		<div class="section-devider"></div>
 		
 		<div class="row">
 			<div class="col-lg-12">
@@ -73,108 +84,128 @@
 		
 		<!-- Company description -->
 		<div class="row">
-			<div class="col-lg-12">
-				<h3>Our Company</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				<p>Bibendum est ultricies integer quis. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis.
-					Viverra aliquet eget sit amet tellus cras adipiscing enim. Est placerat in egestas erat imperdiet.
-					Mauris in aliquam sem fringilla. Lacinia quis vel eros donec ac odio tempor orci dapibus. Ipsum consequat nisl vel pretium lectus quam id.
-					Penatibus et magnis dis parturient montes nascetur. Dis parturient montes nascetur ridiculus mus mauris vitae. Ipsum consequat nisl vel pretium lectus quam id leo in. Ac placerat vestibulum lectus mauris.
-					Venenatis a condimentum vitae sapien pellentesque habitant morbi.
-				</p>
-				<p>Cras sed felis eget velit aliquet sagittis id consectetur purus. Quisque egestas diam in arcu. Fringilla urna porttitor rhoncus dolor purus. Commodo odio aenean sed adipiscing.
-					Duis at consectetur lorem donec massa sapien faucibus. Nunc sed velit dignissim sodales ut. Duis tristique sollicitudin nibh sit. Ante in nibh mauris cursus mattis molestie a.
-					Nisl pretium fusce id velit ut tortor pretium viverra. Venenatis cras sed felis eget velit. Fermentum et sollicitudin ac orci. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla.
-					Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Nunc mattis enim ut tellus. Adipiscing elit ut aliquam purus sit amet luctus venenatis.
-					Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Dignissim convallis aenean et tortor. Nunc sed velit dignissim sodales ut eu.
-					Massa id neque aliquam vestibulum morbi blandit cursus risus. Eget arcu dictum varius duis at. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.
-					Sit amet cursus sit amet dictum sit amet justo. Vel quam elementum pulvinar etiam non. Amet aliquam id diam maecenas ultricies mi eget. Nisi scelerisque eu ultrices vitae auctor eu augue ut.
-				</p>
-				<p>Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla facilisi nullam vehicula ipsum a arcu cursus. Vulputate enim nulla aliquet porttitor lacus luctus.
-					Consequat semper viverra nam libero justo laoreet sit. Urna neque viverra justo nec ultrices dui sapien. Erat pellentesque adipiscing commodo elit at.
-					Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Lacus sed viverra tellus in hac. Et malesuada fames ac turpis egestas integer. Sit amet dictum sit amet justo donec enim diam.
-					Sapien faucibus et molestie ac. Faucibus purus in massa tempor. Habitasse platea dictumst quisque sagittis. Enim praesent elementum facilisis leo vel fringilla est ullamcorper.
-					Vulputate dignissim suspendisse in est ante. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Risus sed vulputate odio ut enim blandit volutpat maecenas.
-					Amet aliquam id diam maecenas ultricies mi. Interdum posuere lorem ipsum dolor sit amet. Eget nullam non nisi est sit amet. Aliquet nec ullamcorper sit amet risus nullam eget felis.
-					Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus. In hac habitasse platea dictumst vestibulum rhoncus est. Nullam non nisi est sit amet facilisis magna etiam.
-					Fames ac turpis egestas integer eget aliquet nibh praesent. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Phasellus vestibulum lorem sed risus ultricies tristique nulla.
-					Egestas maecenas pharetra convallis posuere. Vitae ultricies leo integer malesuada nunc vel risus. Pulvinar mattis nunc sed blandit libero volutpat. Condimentum mattis pellentesque id nibh.
-				</p>
-				<h3>What We Do</h3>
-				<p>Amet mauris commodo quis imperdiet massa tincidunt. Et malesuada fames ac turpis egestas integer eget. Vitae auctor eu augue ut lectus. Nulla posuere sollicitudin aliquam ultrices.
-					Amet facilisis magna etiam tempor. Dolor sit amet consectetur adipiscing elit. Sit amet est placerat in egestas erat. Suscipit tellus mauris a diam maecenas sed enim.
-					Malesuada fames ac turpis egestas sed tempus urna et pharetra. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Cras ornare arcu dui vivamus. Congue eu consequat ac felis donec et odio pellentesque.
-					Mauris augue neque gravida in fermentum. Mattis molestie a iaculis at erat pellentesque adipiscing. Tortor aliquam nulla facilisi cras fermentum odio.
-					Odio ut enim blandit volutpat maecenas volutpat blandit. Augue interdum velit euismod in pellentesque massa. Pulvinar sapien et ligula ullamcorper malesuada proin.
-					Fringilla urna porttitor rhoncus dolor purus non enim. A iaculis at erat pellentesque adipiscing commodo elit. Amet nulla facilisi morbi tempus iaculis urna id.
-					Nibh venenatis cras sed felis eget velit aliquet sagittis id. Auctor augue mauris augue neque gravida. Magna ac placerat vestibulum lectus. Mattis aliquam faucibus purus in massa tempor nec feugiat.
-					Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Aliquet nibh praesent tristique magna sit amet purus gravida. Cursus turpis massa tincidunt dui ut. Elit sed vulputate mi sit.
-					Feugiat in fermentum posuere urna nec tincidunt praesent. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Semper auctor neque vitae tempus quam pellentesque.
-				</p>
-				<p>At consectetur lorem donec massa sapien. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Mattis nunc sed blandit libero volutpat sed cras ornare arcu.
-					Sed turpis tincidunt id aliquet risus feugiat in ante. In fermentum posuere urna nec tincidunt praesent semper feugiat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et.
-					Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. At volutpat diam ut venenatis tellus in metus vulputate eu. Faucibus turpis in eu mi bibendum neque egestas congue.
-					A pellentesque sit amet porttitor eget dolor morbi. Mauris augue neque gravida in fermentum et. Ac turpis egestas sed tempus urna et pharetra pharetra. Vulputate ut pharetra sit amet aliquam.
-					Pellentesque id nibh tortor id. Sed vulputate mi sit amet mauris commodo quis imperdiet. Nisl tincidunt eget nullam non nisi est. Semper quis lectus nulla at. Id faucibus nisl tincidunt eget nullam.
-					Quam id leo in vitae turpis massa. Integer quis auctor elit sed. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Pretium vulputate sapien nec sagittis.
-					Nulla posuere sollicitudin aliquam ultrices sagittis. Amet consectetur adipiscing elit pellentesque habitant. Diam maecenas sed enim ut sem viverra aliquet eget sit.
-					Amet nulla facilisi morbi tempus iaculis urna id volutpat. Urna neque viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas sed sed. Scelerisque in dictum non consectetur a erat nam at.
-				</p>
-				<p>Justo donec enim diam vulputate ut pharetra sit amet aliquam. Nec ullamcorper sit amet risus. Mi ipsum faucibus vitae aliquet nec ullamcorper. Curabitur vitae nunc sed velit dignissim sodales.
-					Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. A lacus vestibulum sed arcu non odio euismod. Cras semper auctor neque vitae tempus.
-					In tellus integer feugiat scelerisque varius morbi enim. Faucibus pulvinar elementum integer enim neque volutpat. Eros donec ac odio tempor. At varius vel pharetra vel turpis nunc eget.
-					Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Risus nec feugiat in fermentum posuere. Interdum varius sit amet mattis vulputate enim. Sed cras ornare arcu dui vivamus arcu felis bibendum.
-					Velit ut tortor pretium viverra suspendisse. Risus pretium quam vulputate dignissim suspendisse in. Est velit egestas dui id. Sollicitudin nibh sit amet commodo nulla facilisi.
-					Imperdiet nulla malesuada pellentesque elit eget gravida cum. Turpis egestas integer eget aliquet nibh praesent. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.
-					Enim nunc faucibus a pellentesque sit. Maecenas ultricies mi eget mauris pharetra. Ultrices eros in cursus turpis massa tincidunt dui ut. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum.
-					Est lorem ipsum dolor sit amet consectetur.
-				</p>
-				<p>Sed egestas egestas fringilla phasellus. Et malesuada fames ac turpis egestas. Enim eu turpis egestas pretium aenean. Pharetra sit amet aliquam id. Arcu bibendum at varius vel pharetra vel turpis nunc.
-					Augue lacus viverra vitae congue eu consequat. Sapien nec sagittis aliquam malesuada. Morbi blandit cursus risus at ultrices mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat.
-					Cursus risus at ultrices mi tempus. Tincidunt id aliquet risus feugiat in ante metus. Enim sed faucibus turpis in eu mi bibendum. Volutpat est velit egestas dui id ornare arcu.
-					Platea dictumst vestibulum rhoncus est pellentesque. Facilisi morbi tempus iaculis urna id volutpat. Magnis dis parturient montes nascetur ridiculus. Sed augue lacus viverra vitae congue eu consequat ac felis.
-					A scelerisque purus semper eget duis. Faucibus purus in massa tempor nec feugiat nisl pretium. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.
-					Massa id neque aliquam vestibulum morbi blandit cursus. Suspendisse in est ante in. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit.
-					Diam in arcu cursus euismod quis viverra nibh. Integer feugiat scelerisque varius morbi. Nunc mattis enim ut tellus elementum sagittis vitae et. Egestas fringilla phasellus faucibus scelerisque.
-					Posuere sollicitudin aliquam ultrices sagittis orci. Ac tortor vitae purus faucibus ornare suspendisse sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.
-					Risus in hendrerit gravida rutrum quisque. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Sit amet cursus sit amet. In mollis nunc sed id semper risus in.
-					Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Id interdum velit laoreet id donec ultrices tincidunt.
-					Mauris pharetra et ultrices neque ornare aenean euismod elementum. Adipiscing enim eu turpis egestas pretium. Magnis dis parturient montes nascetur ridiculus mus mauris.
-					Fames ac turpis egestas integer eget aliquet nibh praesent. Consequat nisl vel pretium lectus quam id leo in vitae. Habitant morbi tristique senectus et netus et malesuada fames.
-				</p>
+			<section class="col-lg-12">
+				<article>
+					<h3 class="pages-section-name">Our Company</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<p>Bibendum est ultricies integer quis. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis.
+						Viverra aliquet eget sit amet tellus cras adipiscing enim. Est placerat in egestas erat imperdiet.
+						Mauris in aliquam sem fringilla. Lacinia quis vel eros donec ac odio tempor orci dapibus. Ipsum consequat nisl vel pretium lectus quam id.
+						Penatibus et magnis dis parturient montes nascetur. Dis parturient montes nascetur ridiculus mus mauris vitae. Ipsum consequat nisl vel pretium lectus quam id leo in. Ac placerat vestibulum lectus mauris.
+						Venenatis a condimentum vitae sapien pellentesque habitant morbi.
+					</p>
+					<p>Cras sed felis eget velit aliquet sagittis id consectetur purus. Quisque egestas diam in arcu. Fringilla urna porttitor rhoncus dolor purus. Commodo odio aenean sed adipiscing.
+						Duis at consectetur lorem donec massa sapien faucibus. Nunc sed velit dignissim sodales ut. Duis tristique sollicitudin nibh sit. Ante in nibh mauris cursus mattis molestie a.
+						Nisl pretium fusce id velit ut tortor pretium viverra. Venenatis cras sed felis eget velit. Fermentum et sollicitudin ac orci. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla.
+						Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Nunc mattis enim ut tellus. Adipiscing elit ut aliquam purus sit amet luctus venenatis.
+						Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Dignissim convallis aenean et tortor. Nunc sed velit dignissim sodales ut eu.
+						Massa id neque aliquam vestibulum morbi blandit cursus risus. Eget arcu dictum varius duis at. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.
+						Sit amet cursus sit amet dictum sit amet justo. Vel quam elementum pulvinar etiam non. Amet aliquam id diam maecenas ultricies mi eget. Nisi scelerisque eu ultrices vitae auctor eu augue ut.
+					</p>
+					<p>Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla facilisi nullam vehicula ipsum a arcu cursus. Vulputate enim nulla aliquet porttitor lacus luctus.
+						Consequat semper viverra nam libero justo laoreet sit. Urna neque viverra justo nec ultrices dui sapien. Erat pellentesque adipiscing commodo elit at.
+						Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Lacus sed viverra tellus in hac. Et malesuada fames ac turpis egestas integer. Sit amet dictum sit amet justo donec enim diam.
+						Sapien faucibus et molestie ac. Faucibus purus in massa tempor. Habitasse platea dictumst quisque sagittis. Enim praesent elementum facilisis leo vel fringilla est ullamcorper.
+						Vulputate dignissim suspendisse in est ante. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Risus sed vulputate odio ut enim blandit volutpat maecenas.
+						Amet aliquam id diam maecenas ultricies mi. Interdum posuere lorem ipsum dolor sit amet. Eget nullam non nisi est sit amet. Aliquet nec ullamcorper sit amet risus nullam eget felis.
+						Risus nullam eget felis eget nunc lobortis mattis aliquam faucibus. In hac habitasse platea dictumst vestibulum rhoncus est. Nullam non nisi est sit amet facilisis magna etiam.
+						Fames ac turpis egestas integer eget aliquet nibh praesent. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Phasellus vestibulum lorem sed risus ultricies tristique nulla.
+						Egestas maecenas pharetra convallis posuere. Vitae ultricies leo integer malesuada nunc vel risus. Pulvinar mattis nunc sed blandit libero volutpat. Condimentum mattis pellentesque id nibh.
+					</p>
+				</article>
+				<article>
+					<h3 class="pages-section-name">What We Do</h3>
+					<p>Amet mauris commodo quis imperdiet massa tincidunt. Et malesuada fames ac turpis egestas integer eget. Vitae auctor eu augue ut lectus. Nulla posuere sollicitudin aliquam ultrices.
+						Amet facilisis magna etiam tempor. Dolor sit amet consectetur adipiscing elit. Sit amet est placerat in egestas erat. Suscipit tellus mauris a diam maecenas sed enim.
+						Malesuada fames ac turpis egestas sed tempus urna et pharetra. Nibh nisl condimentum id venenatis a condimentum vitae sapien. Cras ornare arcu dui vivamus. Congue eu consequat ac felis donec et odio pellentesque.
+						Mauris augue neque gravida in fermentum. Mattis molestie a iaculis at erat pellentesque adipiscing. Tortor aliquam nulla facilisi cras fermentum odio.
+						Odio ut enim blandit volutpat maecenas volutpat blandit. Augue interdum velit euismod in pellentesque massa. Pulvinar sapien et ligula ullamcorper malesuada proin.
+						Fringilla urna porttitor rhoncus dolor purus non enim. A iaculis at erat pellentesque adipiscing commodo elit. Amet nulla facilisi morbi tempus iaculis urna id.
+						Nibh venenatis cras sed felis eget velit aliquet sagittis id. Auctor augue mauris augue neque gravida. Magna ac placerat vestibulum lectus. Mattis aliquam faucibus purus in massa tempor nec feugiat.
+						Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Aliquet nibh praesent tristique magna sit amet purus gravida. Cursus turpis massa tincidunt dui ut. Elit sed vulputate mi sit.
+						Feugiat in fermentum posuere urna nec tincidunt praesent. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Semper auctor neque vitae tempus quam pellentesque.
+					</p>
+					<p>At consectetur lorem donec massa sapien. Amet nulla facilisi morbi tempus iaculis urna id volutpat. Mattis nunc sed blandit libero volutpat sed cras ornare arcu.
+						Sed turpis tincidunt id aliquet risus feugiat in ante. In fermentum posuere urna nec tincidunt praesent semper feugiat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et.
+						Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec. At volutpat diam ut venenatis tellus in metus vulputate eu. Faucibus turpis in eu mi bibendum neque egestas congue.
+						A pellentesque sit amet porttitor eget dolor morbi. Mauris augue neque gravida in fermentum et. Ac turpis egestas sed tempus urna et pharetra pharetra. Vulputate ut pharetra sit amet aliquam.
+						Pellentesque id nibh tortor id. Sed vulputate mi sit amet mauris commodo quis imperdiet. Nisl tincidunt eget nullam non nisi est. Semper quis lectus nulla at. Id faucibus nisl tincidunt eget nullam.
+						Quam id leo in vitae turpis massa. Integer quis auctor elit sed. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. Pretium vulputate sapien nec sagittis.
+						Nulla posuere sollicitudin aliquam ultrices sagittis. Amet consectetur adipiscing elit pellentesque habitant. Diam maecenas sed enim ut sem viverra aliquet eget sit.
+						Amet nulla facilisi morbi tempus iaculis urna id volutpat. Urna neque viverra justo nec ultrices dui sapien eget. Sed elementum tempus egestas sed sed. Scelerisque in dictum non consectetur a erat nam at.
+					</p>
+					<p>Justo donec enim diam vulputate ut pharetra sit amet aliquam. Nec ullamcorper sit amet risus. Mi ipsum faucibus vitae aliquet nec ullamcorper. Curabitur vitae nunc sed velit dignissim sodales.
+						Nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus. A lacus vestibulum sed arcu non odio euismod. Cras semper auctor neque vitae tempus.
+						In tellus integer feugiat scelerisque varius morbi enim. Faucibus pulvinar elementum integer enim neque volutpat. Eros donec ac odio tempor. At varius vel pharetra vel turpis nunc eget.
+						Aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Risus nec feugiat in fermentum posuere. Interdum varius sit amet mattis vulputate enim. Sed cras ornare arcu dui vivamus arcu felis bibendum.
+						Velit ut tortor pretium viverra suspendisse. Risus pretium quam vulputate dignissim suspendisse in. Est velit egestas dui id. Sollicitudin nibh sit amet commodo nulla facilisi.
+						Imperdiet nulla malesuada pellentesque elit eget gravida cum. Turpis egestas integer eget aliquet nibh praesent. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.
+						Enim nunc faucibus a pellentesque sit. Maecenas ultricies mi eget mauris pharetra. Ultrices eros in cursus turpis massa tincidunt dui ut. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum.
+						Est lorem ipsum dolor sit amet consectetur.
+					</p>
+					<p>Sed egestas egestas fringilla phasellus. Et malesuada fames ac turpis egestas. Enim eu turpis egestas pretium aenean. Pharetra sit amet aliquam id. Arcu bibendum at varius vel pharetra vel turpis nunc.
+						Augue lacus viverra vitae congue eu consequat. Sapien nec sagittis aliquam malesuada. Morbi blandit cursus risus at ultrices mi. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat.
+						Cursus risus at ultrices mi tempus. Tincidunt id aliquet risus feugiat in ante metus. Enim sed faucibus turpis in eu mi bibendum. Volutpat est velit egestas dui id ornare arcu.
+						Platea dictumst vestibulum rhoncus est pellentesque. Facilisi morbi tempus iaculis urna id volutpat. Magnis dis parturient montes nascetur ridiculus. Sed augue lacus viverra vitae congue eu consequat ac felis.
+						A scelerisque purus semper eget duis. Faucibus purus in massa tempor nec feugiat nisl pretium. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean.
+						Massa id neque aliquam vestibulum morbi blandit cursus. Suspendisse in est ante in. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit.
+						Diam in arcu cursus euismod quis viverra nibh. Integer feugiat scelerisque varius morbi. Nunc mattis enim ut tellus elementum sagittis vitae et. Egestas fringilla phasellus faucibus scelerisque.
+						Posuere sollicitudin aliquam ultrices sagittis orci. Ac tortor vitae purus faucibus ornare suspendisse sed. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus.
+						Risus in hendrerit gravida rutrum quisque. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Sit amet cursus sit amet. In mollis nunc sed id semper risus in.
+						Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Dignissim suspendisse in est ante in nibh mauris cursus mattis. Id interdum velit laoreet id donec ultrices tincidunt.
+						Mauris pharetra et ultrices neque ornare aenean euismod elementum. Adipiscing enim eu turpis egestas pretium. Magnis dis parturient montes nascetur ridiculus mus mauris.
+						Fames ac turpis egestas integer eget aliquet nibh praesent. Consequat nisl vel pretium lectus quam id leo in vitae. Habitant morbi tristique senectus et netus et malesuada fames.
+					</p>
+				</article>
 
-			</div>
+			</section>
 		</div>	
-			<!-- Our Team-->
-		<div class="row">
-			<h3>Our Team</h3>
-			<div class="col-lg-3 team-pic">
-				<div class="card" style="width: 18rem;">
-				  <img src="../images/igor.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-					<h5 class="card-title">Igor Tokarev</h5>
-					<p class="card-text">Real Estate Agency Co-founder</p>
-				  </div>
-				</div>
-			</div>
 		
-			<div class="col-lg-3 team-pic">
-				<div class="card" style="width: 18rem;">
-				  <img src="../images/jarek.jpg" class="card-img-top" alt="...">
-				  <div class="card-body">
-					<h5 class="card-title">Jaroslaw Polowy</h5>
-					<p class="card-text">Real Estate Agency Co-founder</p>
+		<!--Devider-->
+		<div class="section-devider"></div>
+		
+		<!-- Our Team-->
+		<div class="row about-us-team">
+			<h3 class="pages-section-name">Our Team</h3>
+			<figure class="col-md-4 col-lg-3 team-pic">
+				<div class="card about-us-card">
+				  <img src="../images/igor.jpg" class="card-img-top about-us-img" alt="Igor's picture">
+				  <div class="card-body about-us-card-body">
+					<h5 class="card-title about-us-card-title">Igor Tokarev</h5>
+					<hr />
+					<p class="card-text about-us-card-text">Real Estate Agency<br /> Co-founder</p>
+					<p class="card-text about-us-card-text" id="show-number-igor">Show mobile number</p>
+					<p class="card-text about-us-card-text" id="hide-number-igor">Hide mobile number</p>
+					<p class="card-text about-us-card-text" id="hidden-number-igor">087 6543210</p>
 				  </div>
 				</div>
-			</div>
+			</figure>
+		
+			<figure class="col-md-4 col-lg-3 team-pic">
+				<div class="card about-us-card">
+				  <img src="../images/jarek.jpg" class="card-img-top about-us-img" alt="Jaroslaw's picture">
+				  <div class="card-body about-us-card-body">
+					<h5 class="card-title about-us-card-title">Jaroslaw Polowy</h5>
+					<hr />
+					<p class="card-text about-us-card-text">Real Estate Agency<br /> Co-founder</p>
+					<p class="card-text about-us-card-text" id="show-number-jarek">Show mobile number</p>
+					<p class="card-text about-us-card-text" id="hide-number-jarek">Hide mobile number</p>
+					<p class="card-text about-us-card-text" id="hidden-number-jarek">087 1234567</p>
+					
+				  </div>
+				</div>
+			</figure>
 		</div>
 		
+		<!--Devider-->
+		<div class="section-devider"></div>
+		
 		<!-- footer -->
-		<div class="row footer">
+		<footer class="row footer">
 			<div class="col-md-3">
 				<ul class="footer-logo">
 					<a href="../"><img src="../images/logo-small.png" width="150px" alt="page logo"></a>
@@ -209,12 +240,35 @@
 				<hr>
 				<p><a href="https://www.ncirl.ie/" target="_blank">NCI Project</a><p>
 			</div>
-		</div>
+		</footer>
 		
 	  </div>
+	  <!-- jQuerry script for authors contact -->
+	  <script>
+		$("#show-number-jarek").click(function(){
+		  $("#hidden-number-jarek").fadeIn(1000);
+		  $("#show-number-jarek").fadeOut(0);
+		  $("#hide-number-jarek").fadeIn(0);
+		});
+		$("#hide-number-jarek").click(function(){
+		  $("#hidden-number-jarek").fadeOut(1000);
+		  $("#hide-number-jarek").fadeOut(0);
+		  $("#show-number-jarek").fadeIn(0);
+		});
+		$("#show-number-igor").click(function(){
+		  $("#hidden-number-igor").fadeIn(1000);
+		  $("#show-number-igor").fadeOut(0);
+		  $("#hide-number-igor").fadeIn(0);
+		});
+		$("#hide-number-igor").click(function(){
+		  $("#hidden-number-igor").fadeOut(1000);
+		  $("#hide-number-igor").fadeOut(0);
+		  $("#show-number-igor").fadeIn(0);
+		});
+	  </script>
 	  <!-- JavaScript Bundle with Popper Bootstrap-->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	  <!-- Local JS script files -->
-	  <script src="/scripts/app.js"></script>
+	  <script src="../scripts/app.js"></script>
 	</body>
 </html>
