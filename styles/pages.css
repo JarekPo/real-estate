@@ -22,6 +22,10 @@
 	align-items: center;
 	align-self: center;
 }
+.contact-us-address-name{
+	font-size: 1.05em;
+	font-weight: bold;
+}
 
 .contact-us-form{
 	color: #004463;
