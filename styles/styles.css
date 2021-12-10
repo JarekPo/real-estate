@@ -122,3 +122,143 @@ body{
     font-size: 28px;
   }
 }
+
+/* Jaroslaw Polowy css below */
+.page-heading{
+	text-align: center;
+	color:#004463;
+}
+.pages-section-name, .contact-us-address h4, .contact-us-form-label, #form-sent-msg{
+	color: #004463;
+}
+
+.contact-us-contact-row{
+	color: white;
+	background-image: url("../images/contact-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding-top: 15px;
+	border-radius: 4px;
+}
+.contact-us-address{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+}
+.contact-us-address-name{
+	font-size: 1.05em;
+	font-weight: bold;
+}
+
+.contact-us-form{
+	color: #004463;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 5%;
+}
+.contact-us-form span, #form-sent-msg span{
+	color: #b80808;
+	font-weight:bold;
+}
+.contact-us-btn, .residental-property-btn{
+	background: #004463;
+	border: 1px solid white;
+}
+.contact-us-btn:hover, .residental-property-btn:hover{
+	background: #2880B9;
+	border: 1px solid #004463;
+}
+
+.form-error-msg{
+	color: #b80808;
+	font-size:0.75em;
+	font-weight: bold;
+}
+
+.residental-property-cards{
+	justify-content: space-between;
+}
+
+.property-form-select{
+	margin: 10px 0;
+}
+
+.about-us-team{
+	display: flex;
+	justify-content: space-around;
+}
+.about-us-team h3{
+	text-align: center;
+}
+.team-pic, .property-pic{
+	margin-top: 10px;
+	color: #004463;
+	text-align: center;	
+}
+.about-us-card{
+	border: 1px solid #2880B9;
+}
+.about-us-card-body{
+	border-top: 1px solid #2880B9;
+}
+.about-us-img{
+	padding: 2px;
+}
+
+#hidden-number-jarek, #hidden-number-igor, #hide-number-jarek, #hide-number-igor{
+	display: none;
+}
+#show-number-jarek, #show-number-igor, #hide-number-jarek, #hide-number-igor{
+	font-size: 80%;
+	color: #2880B9;
+	border: 1px solid #2880B9;
+}
+#show-number-jarek:hover, #show-number-igor:hover, #hide-number-jarek:hover, #hide-number-igor:hover{
+	cursor: pointer;
+}
+
+.footer{
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	color: white;
+	font-size: 80%;
+	background: #004463;
+	padding: 30px;
+	border-radius: 4px;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #2880B9;
+	text-decoration: underline;
+}
+.footer-links, .footer-info, .footer-logo{
+	width:100%;
+	margin: 10px auto;
+	list-style: none;
+}
+.footer-info span{
+	font-size:120%;
+	font-weight:bold;
+}
+.footer-project{
+	width:50%;
+	text-align: center;
+	margin: auto;
+}
+
+@media all and (max-width: 767px) {
+	.footer-links, .footer-info, .footer-logo{
+		padding: 0;
+		text-align: center;
+	}
+	.team-pic{
+		max-width: 300px;
+	}
+}
