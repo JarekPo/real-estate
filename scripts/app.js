@@ -101,7 +101,7 @@ function search () {
 
   if (searchResults.length > 0) {
     // Append to the element's content
-    heading.innerHTML += '<div class="row"><div class="section-name" id="new-to-market"><p>Search results: </p></div></div>';
+    heading.innerHTML = '<div class="row"><div class="section-name" id="new-to-market"><p>Search results: </p></div></div>';
     searchContainer.appendChild(heading);
     var cardContainer = document.createElement('div');
     cardContainer.classList.add("row");
@@ -118,7 +118,6 @@ function search () {
             <img src=${property.image} class="card-img-top" width="300px" height="300px" alt="apartment image">
             <div class="card-body card-text-box">
               <h5 class="card-title">${property.name}</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
           </div>
         </div>`

@@ -1,15 +1,15 @@
 const properties = [{
     location: "Dublin",
-    name: "Lucky apartment",
+    name: "Dublin, 3 bedroom apartment",
     type: "Apartment",
     bedroomCount: "3 bedroom",
     price: 1000,
     image: "./images/card1.jpeg"
   },{
     location: "Dublin",
-    name: "Sweet home apartment",
+    name: "Dublin, 4 bedroom apartment",
     type: "House",
-    bedroomCount: "4+ bedroom",
+    bedroomCount: "4 bedroom",
     price: 2500,
     image: "./images/card2.jpeg"
   },{
@@ -21,35 +21,35 @@ const properties = [{
     image: "./images/card3.jpeg"
   },{
     location: "Limerick",
-    name: "Limerick apartment",
+    name: "Limerick, 2 bedroom apartment",
     type: "Apartment",
     bedroomCount: "2 bedroom",
     price: 800,
     image: "./images/card4.jpeg"
   },{
     location: "Shannon",
-    name: "Shannon lucky apartment",
+    name: "Shannon, 3 bedroom apartment",
     type: "Apartment",
     bedroomCount: "3 bedroom",
     price: 900,
     image: "./images/card1.jpeg"
   },{
     location: "Shannon",
-    name: "Sweet home apartment",
+    name: "Shannon, 3 bedroom apartment",
     type: "Apartment",
     bedroomCount: "3 bedroom",
     price: 750,
     image: "./images/card2.jpeg"
   },{
     location: "Shannon",
-    name: "Home apartment",
+    name: "Shannon, 3 bedroom apartment",
     type: "Apartment",
     bedroomCount: "3 bedroom",
     price: 690,
     image: "./images/card3.jpeg"
   },{
     location: "Shannon",
-    name: "Apartment",
+    name: "Shannon, 3 bedroom apartment",
     type: "Apartment",
     bedroomCount: "3 bedroom",
     price: 780,
